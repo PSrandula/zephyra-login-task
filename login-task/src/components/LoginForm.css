@@ -33,13 +33,11 @@
 }
 input {
   width: 100%;
-  padding: 15px 20px;
-  margin: 10px 0;
+  padding: 15px;
+  margin: 12px 0;
   border: 1px solid #ccc;
   border-radius: 10px;
   font-size: 15px;
-  box-sizing: border-box;
-  display: block;
 }
 .button-row {
   display: flex;
