@@ -7,3 +7,12 @@ const LoginForm = () => {
     password: 'emilyspass',
     expiresInMins: 30,
   });
+  const [response, setResponse] = useState(null);
+  const [error, setError] = useState('');
+
+  const handleChange = e => {
+    setFormData(prev => ({
+      ...prev,
+      [e.target.name]: e.target.value
+    }));
+  };
