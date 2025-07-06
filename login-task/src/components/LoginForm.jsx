@@ -16,3 +16,14 @@ const LoginForm = () => {
       [e.target.name]: e.target.value
     }));
   };
+
+  const handleSubmit = async e => {
+    e.preventDefault();
+    try {
+      const res = await api.post('/auth/login', formData);
+      setResponse(res.data);
+      setError('');
+    } catch (err) {
+      setError('Login failed. Please check credentials.');
+    }
+  };
