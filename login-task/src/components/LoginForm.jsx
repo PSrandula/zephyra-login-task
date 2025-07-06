@@ -58,3 +58,15 @@ const LoginForm = () => {
             <button type="submit" className="blue-btn">Create account</button>
           </div>
         </form>
+
+        
+        {response && <p className="success">✅ Token: {response.token}</p>}
+        {error && <p className="error">❌ {error}</p>}
+      </div>
+
+      <div className="right-panel" />
+    </div>
+  );
+};
+
+export default LoginForm;
