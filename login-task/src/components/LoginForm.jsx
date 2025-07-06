@@ -52,3 +52,9 @@ const LoginForm = () => {
             onChange={handleChange}
             placeholder="Password"
           />
+
+           <div className="button-row">
+            <button type="button" className="gray-btn">Change method</button>
+            <button type="submit" className="blue-btn">Create account</button>
+          </div>
+        </form>
