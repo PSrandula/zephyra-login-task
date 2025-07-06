@@ -39,4 +39,16 @@ const LoginForm = () => {
           Already A Member? <a href="#">Log In</a>
         </p>
 
-    
+    <form onSubmit={handleSubmit}>
+          <div className="row">
+            <input type="text" placeholder="First name" />
+            <input type="text" placeholder="Last name" />
+          </div>
+          <input type="email" placeholder="Email" />
+          <input
+            type="password"
+            name="password"
+            value={formData.password}
+            onChange={handleChange}
+            placeholder="Password"
+          />
