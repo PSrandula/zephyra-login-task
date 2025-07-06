@@ -14,3 +14,16 @@ api.interceptors.request.use(
   },
   error => Promise.reject(error)
 );
+
+api.interceptors.response.use(
+  response => {
+    console.log('Received Response:', response);
+    return response;
+  },
+  error => {
+    console.error('API Error:', error);
+    return Promise.reject(error);
+  }
+);
+
+export default api;
