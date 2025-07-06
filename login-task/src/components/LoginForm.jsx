@@ -27,3 +27,16 @@ const LoginForm = () => {
       setError('Login failed. Please check credentials.');
     }
   };
+
+   return (
+    <div className="login-fullscreen">
+      <div className="left-panel">
+        <h4>START FOR FREE</h4>
+        <h1>
+          Create new account<span className="dot">.</span>
+        </h1>
+        <p>
+          Already A Member? <a href="#">Log In</a>
+        </p>
+
+    
