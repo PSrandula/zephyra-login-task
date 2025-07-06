@@ -88,3 +88,13 @@ button {
   background: #397eff;
   color: white;
 }
+
+.success {
+  color: green;
+  margin-top: 15px;
+}
+
+.error {
+  color: red;
+  margin-top: 15px;
+}
