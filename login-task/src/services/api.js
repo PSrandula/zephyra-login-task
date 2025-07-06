@@ -6,3 +6,11 @@ const api = axios.create({
     'Content-Type': 'application/json'
   }
 });
+
+api.interceptors.request.use(
+  config => {
+    console.log('Sending Request:', config);
+    return config;
+  },
+  error => Promise.reject(error)
+);
