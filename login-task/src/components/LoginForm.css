@@ -4,3 +4,30 @@
   width: 100vw;
   font-family: 'Segoe UI', sans-serif;
 }
+
+.left-panel {
+  width: 40%;
+  padding: 60px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-panel h1 {
+  font-size: 2.8rem;
+  margin: 10px 0;
+}
+
+.dot {
+  color: #397eff;
+}
+
+.left-panel p {
+  margin-bottom: 30px;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
